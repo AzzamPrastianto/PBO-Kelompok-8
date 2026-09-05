@@ -7,14 +7,12 @@ public class GenreBuku {
     private String namaGenre;
     private String deskripsi;
 
-    // Constructor
     public GenreBuku(int idGenre, String namaGenre, String deskripsi) {
         this.idGenre = idGenre;
         this.namaGenre = namaGenre;
         this.deskripsi = deskripsi;
     }
 
-    // Getter Methods
     public int getIdGenre() {
         return idGenre;
     }
@@ -27,7 +25,6 @@ public class GenreBuku {
         return deskripsi;
     }
 
-    // Setter Methods
     public void setNamaGenre(String namaGenre) {
         this.namaGenre = namaGenre;
     }
@@ -36,7 +33,6 @@ public class GenreBuku {
         this.deskripsi = deskripsi;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "GenreBuku{" +
