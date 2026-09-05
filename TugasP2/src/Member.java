@@ -14,7 +14,6 @@ public class Member {
     private String tanggalDaftar;
     private List<Buku> bukuPinjaman;
 
-    // Constructor
     public Member(int idMember, String nama, String email, String telepon, String tanggalDaftar) {
         this.idMember = idMember;
         this.nama = nama;
@@ -24,7 +23,6 @@ public class Member {
         this.bukuPinjaman = new ArrayList<>();
     }
 
-    // Getter Methods
     public int getIdMember() {
         return idMember;
     }
@@ -49,7 +47,6 @@ public class Member {
         return bukuPinjaman;
     }
 
-    // Setter Methods
     public void setNama(String nama) {
         this.nama = nama;
     }
@@ -105,7 +102,6 @@ public class Member {
         System.out.println("   Total: " + bukuPinjaman.size() + " buku\n");
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Member{" +
