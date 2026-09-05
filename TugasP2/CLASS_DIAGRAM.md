@@ -83,8 +83,8 @@
 ### 1. **GenreBuku → Buku** (Many-to-One / Aggregation)
 
 ```
-┌─────────────────┐         ┌──────────────────┐
-│   GenreBuku     │    1    │      Buku        │
+┌─────────────────┐          ┌──────────────────┐
+│   GenreBuku     │    1     │      Buku        │
 │                 │◄─────────│                  │
 │ - idGenre       │    has   │ - idBuku         │
 │ - namaGenre     │    many  │ - judul          │
@@ -106,8 +106,8 @@
 ### 2. **Member → Buku** (Many-to-Many / Composition)
 
 ```
-┌──────────────────┐                    ┌──────────────────┐
-│     Member       │   meminjam         │      Buku        │
+┌──────────────────┐                     ┌──────────────────┐
+│     Member       │      meminjam       │      Buku        │
 │                  │────────────────────►│                  │
 │ - idMember       │      banyak         │ - idBuku         │
 │ - nama           │                     │ - judul          │
