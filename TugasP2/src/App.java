@@ -9,7 +9,7 @@ public class App {
         System.out.println("║  Entitas: GenreBuku, Buku, dan Member                  ║");
         System.out.println("╚════════════════════════════════════════════════════════╝\n");
 
-        // ==================== 1. MEMBUAT GENRE BUKU ====================
+
         System.out.println(">>> 1. MEMBUAT GENRE BUKU");
         System.out.println("─────────────────────────────────────────────────────────");
         
@@ -23,7 +23,7 @@ public class App {
         System.out.println(genre3);
         System.out.println(genre4);
         
-        // ==================== 2. MEMBUAT DATA BUKU ====================
+
         System.out.println("\n>>> 2. MEMBUAT DATA BUKU");
         System.out.println("─────────────────────────────────────────────────────────");
         
@@ -39,7 +39,7 @@ public class App {
         System.out.println(buku4);
         System.out.println(buku5);
         
-        // ==================== 3. MEMBUAT MEMBER ====================
+
         System.out.println("\n>>> 3. MEMBUAT MEMBER");
         System.out.println("─────────────────────────────────────────────────────────");
         
@@ -51,32 +51,28 @@ public class App {
         System.out.println(member2);
         System.out.println(member3);
         
-        // ==================== 4. SIMULASI PEMINJAMAN BUKU ====================
+
         System.out.println("\n\n>>> 4. SIMULASI PEMINJAMAN BUKU");
         System.out.println("═════════════════════════════════════════════════════════");
         
-        // Member 1 meminjam buku
         System.out.println("\n[MEMBER 1: BUDI SANTOSO]");
         member1.pinjamBuku(buku1);
         member1.pinjamBuku(buku4);
         member1.pinjamBuku(buku5);
         
-        // Member 2 meminjam buku
         System.out.println("\n[MEMBER 2: SITI NURHALIZA]");
         member2.pinjamBuku(buku2);
         member2.pinjamBuku(buku3);
         member2.pinjamBuku(buku4);
         
-        // Member 3 meminjam buku
         System.out.println("\n[MEMBER 3: AHMAD WIJAYA]");
         member3.pinjamBuku(buku1);
         member3.pinjamBuku(buku2);
         
-        // Coba meminjam buku yang stoknya sudah habis
         System.out.println("\n[PERCOBAAN MEMINJAM BUKU STOK HABIS]");
         member3.pinjamBuku(buku5); // The Hobbit stok tinggal 0 setelah dipinjam Budi
         
-        // ==================== 5. MENAMPILKAN STATUS BUKU ====================
+
         System.out.println("\n>>> 5. STATUS STOK BUKU SETELAH PEMINJAMAN");
         System.out.println("─────────────────────────────────────────────────────────");
         System.out.println(buku1);
@@ -85,14 +81,14 @@ public class App {
         System.out.println(buku4);
         System.out.println(buku5);
         
-        // ==================== 6. MELIHAT DAFTAR BUKU PINJAMAN ====================
+
         System.out.println("\n>>> 6. DAFTAR BUKU PINJAMAN SETIAP MEMBER");
         System.out.println("─────────────────────────────────────────────────────────");
         member1.lihatBukuPinjaman();
         member2.lihatBukuPinjaman();
         member3.lihatBukuPinjaman();
         
-        // ==================== 7. SIMULASI PENGEMBALIAN BUKU ====================
+
         System.out.println(">>> 7. SIMULASI PENGEMBALIAN BUKU");
         System.out.println("─────────────────────────────────────────────────────────");
         
@@ -104,7 +100,7 @@ public class App {
         member2.kembaliBuku(buku4);
         member2.kembaliBuku(buku3);
         
-        // ==================== 8. STATUS AKHIR ====================
+
         System.out.println("\n>>> 8. STATUS AKHIR BUKU SETELAH PENGEMBALIAN");
         System.out.println("─────────────────────────────────────────────────────────");
         System.out.println(buku1);
