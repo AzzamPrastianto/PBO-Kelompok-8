@@ -230,15 +230,15 @@ public class Buku {
 ### Composition (List Buku di Member):
 ```java
 public class Member {
-    private List<Buku> bukuPinjaman;  // Koleksi/Container
+    private List<Buku> bukuPinjaman; 
     
     public Member(...) {
-        this.bukuPinjaman = new ArrayList<>();  // Inisialisasi
+        this.bukuPinjaman = new ArrayList<>();  
     }
     
     public void pinjamBuku(Buku buku) {
         if (buku.pinjamBuku()) {
-            bukuPinjaman.add(buku);  // Tambah ke list
+            bukuPinjaman.add(buku);  
         }
     }
 }
