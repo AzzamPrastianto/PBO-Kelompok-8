@@ -11,7 +11,6 @@ public class Buku {
     private int stok;
     private GenreBuku genre;
 
-    // Constructor
     public Buku(int idBuku, String judul, String pengarang, int tahunTerbit, int stok, GenreBuku genre) {
         this.idBuku = idBuku;
         this.judul = judul;
@@ -21,7 +20,6 @@ public class Buku {
         this.genre = genre;
     }
 
-    // Getter Methods
     public int getIdBuku() {
         return idBuku;
     }
@@ -46,7 +44,6 @@ public class Buku {
         return genre;
     }
 
-    // Setter Methods
     public void setStok(int stok) {
         this.stok = stok;
     }
@@ -74,7 +71,6 @@ public class Buku {
         stok++;
     }
 
-    // toString method
     @Override
     public String toString() {
         return "Buku{" +
