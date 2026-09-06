@@ -1,7 +1,3 @@
-/**
- * Class Main untuk Sistem Manajemen Perpustakaan
- * Demonstrasi penggunaan class GenreBuku, Buku, dan Member
- */
 public class App {
     public static void main(String[] args) {
         System.out.println("╔════════════════════════════════════════════════════════╗");
