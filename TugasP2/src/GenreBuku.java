@@ -1,7 +1,3 @@
-/**
- * Class GenreBuku (BookGenre)
- * Merepresentasikan kategori/genre dari buku
- */
 public class GenreBuku {
     private int idGenre;
     private String namaGenre;
@@ -33,7 +29,6 @@ public class GenreBuku {
         this.deskripsi = deskripsi;
     }
 
-    @Override
     public String toString() {
         return "GenreBuku{" +
                 "idGenre=" + idGenre +
