@@ -1,8 +1,3 @@
-/**
- * Class Buku (Book)
- * Merepresentasikan data buku di perpustakaan
- * Memiliki relasi dengan GenreBuku (Many-to-One)
- */
 public class Buku {
     private int idBuku;
     private String judul;
@@ -52,10 +47,6 @@ public class Buku {
         this.genre = genre;
     }
 
-    /**
-     * Method untuk meminjam buku (mengurangi stok)
-     * @return true jika peminjaman berhasil, false jika stok habis
-     */
     public boolean pinjamBuku() {
         if (stok > 0) {
             stok--;
@@ -64,14 +55,10 @@ public class Buku {
         return false;
     }
 
-    /**
-     * Method untuk mengembalikan buku (menambah stok)
-     */
     public void kembaliBuku() {
         stok++;
     }
 
-    @Override
     public String toString() {
         return "Buku{" +
                 "idBuku=" + idBuku +
