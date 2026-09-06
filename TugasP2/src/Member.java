@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Class Member
- * Merepresentasikan anggota/member perpustakaan
- * Memiliki relasi dengan Buku (One-to-Many untuk peminjaman)
- */
 public class Member {
     private int idMember;
     private String nama;
@@ -59,10 +54,6 @@ public class Member {
         this.telepon = telepon;
     }
 
-    /**
-     * Method untuk meminjam buku
-     * @param buku - buku yang akan dipinjam
-     */
     public void pinjamBuku(Buku buku) {
         if (buku.pinjamBuku()) {
             bukuPinjaman.add(buku);
@@ -72,10 +63,6 @@ public class Member {
         }
     }
 
-    /**
-     * Method untuk mengembalikan buku
-     * @param buku - buku yang akan dikembalikan
-     */
     public void kembaliBuku(Buku buku) {
         if (bukuPinjaman.remove(buku)) {
             buku.kembaliBuku();
@@ -85,9 +72,6 @@ public class Member {
         }
     }
 
-    /**
-     * Method untuk melihat daftar buku yang dipinjam
-     */
     public void lihatBukuPinjaman() {
         System.out.println("\n>>> Daftar Buku Pinjaman " + nama + ":");
         if (bukuPinjaman.isEmpty()) {
@@ -102,7 +86,6 @@ public class Member {
         System.out.println("   Total: " + bukuPinjaman.size() + " buku\n");
     }
 
-    @Override
     public String toString() {
         return "Member{" +
                 "idMember=" + idMember +
